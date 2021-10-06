@@ -1,0 +1,4 @@
+C:\Users\Mario\Desktop\Local\FileChecker\TEST_FILES
+C:\Users\Mario\Desktop\Local\FileChecker\media
+C:\Users\Mario\Desktop\Local\FileChecker\TEST_FILES\test.cfg
+C:\Users\Mario\Desktop\Local\FileChecker\TEST_FILES\Lib

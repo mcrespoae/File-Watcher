@@ -1,0 +1,5 @@
+{'filepath': 'C:\\Anathema\\LOTF2\\Content\\Characters\\PlayerMale\\LongSword\\Animations\\OneHanded_1H\\Combat\\Attacks\\MS2_LS1HAttackSet\\AS_LS1H_DodgeLightAttack_B_Montage.uasset', 'status': 'modified'}
+{'filepath': 'C:\\Anathema\\LOTF2\\Content\\Characters\\PlayerMale\\LongSword\\Animations\\OneHanded_1H\\Combat\\Stab\\Montages\\AS_LS1H_FrontStab_Montage.uasset', 'status': 'modified'}
+{'filepath': 'C:\\Anathema\\LOTF2\\Content\\Characters\\PlayerMale\\LongSword\\Animations\\TwoHanded_2H\\Combat\\Stab\\Montages\\AS_LS2H_BackStab02_Montage.uasset', 'status': 'modified'}
+{'filepath': 'C:\\Anathema\\LOTF2\\Content\\Characters\\PlayerMale\\LongSword\\Animations\\TwoHanded_2H\\Combat\\Stab\\Montages\\AS_LS2H_FrontStab02_Montage.uasset', 'status': 'modified'}
+{'filepath': 'C:\\Anathema\\LOTF2\\Content\\Characters\\Bosses\\SwampKnight\\Knight\\Animations\\UnMounted\\Combat\\Attacks\\AS_SwampKnight_Attack_180_Left.uasset', 'status': 'modified'}
