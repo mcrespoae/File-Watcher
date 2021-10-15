@@ -51,7 +51,6 @@ def delete_duplicates(file_list=[]):
 
 def get_files_from_path_and_add_to_the_list(path, original_list=[], extension=""):
     file_list = []
-
     if os.path.isdir(path):
         file_list = get_files_path_from_folder(path, extension="")
         original_list = add_files_to_watch(original_list, file_list)
@@ -94,7 +93,7 @@ def integrity_check_files(original_files_list, restored_files_list):
             
 
         if not is_founded:
-            #if we have search the whole list and no matches, the file has been deleted
+            #if we have search the whole list and no matches, the file has been deleted.
             diff_list.append({"filepath": f_original, "status":"deleted"})
         else:
             #diff_list.append({"filepath": f_restored, "status":"new"})
@@ -131,26 +130,26 @@ def check_paths(path_list):
     #Check if every path is valid.
     #Returns the usable path list. We can
     usable_paths = []
-    unsuable_paths = []
+    unusable_paths = []
     for path in path_list:
         if os.path.exists(path):
             usable_paths.append(path)
         else:
-            unsuable_paths.append(path)
+            unusable_paths.append(path)
     if len(usable_paths) == 0:
         print(f"No valid paths found in {path_list}")
         print("Aborting...")
         exit()
 
-    return usable_paths
+    return usable_paths, unusable_paths
 
 
 def retrieve(file_path):
     #Executes all the functions to retrieve the watch files
     paths = read_paths_from_file(file_path)
+    paths, _ = check_paths(paths)
     paths = get_all_paths_from_list(paths)
     paths = delete_duplicates(paths)
-    paths = check_paths(paths)
     paths = get_modification_time(paths)
     store_original_data(paths)
     #print(len(paths)) #Debug
@@ -172,6 +171,7 @@ def diff(original_file_path, old_paths, mismatched_file_path, thisdir):
 
     #original_paths = read_original_data()
     new_paths = read_paths_from_file(original_file_path)
+    new_paths, unsusable_paths = check_paths(new_paths)
     new_paths = get_all_paths_from_list(new_paths)
     new_paths = delete_duplicates(new_paths)
     new_paths = get_modification_time(new_paths)
