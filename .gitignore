@@ -1,7 +1,8 @@
 #Logs and local files
 /data/paths.txt
 /data/mismatched.txt
-logs/*
+/logs/new_paths.txt
+/logs/old_paths.txt
 watch
 
 # Byte-compiled / optimized / DLL files
