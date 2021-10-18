@@ -1,5 +1,5 @@
 #Logs and local files
-data/
+/data/
 logs/
 watch
 
