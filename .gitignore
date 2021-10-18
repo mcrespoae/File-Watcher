@@ -1,5 +1,5 @@
 #Logs and local files
-data/*
+data/config/workspace_path.txt
 logs/
 watch
 
