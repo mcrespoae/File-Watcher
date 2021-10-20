@@ -33,7 +33,8 @@ def get_files_path_from_folder(dir_path, extension=""):
 def get_modification_time(file_list):
     original_info_files_list = []
     for f in file_list:
-        original_info_files_list.append({'filepath': f, 'tc':os.path.getmtime(f)})
+        if os.path.exists(f):
+            original_info_files_list.append({'filepath': f, 'tc':os.path.getmtime(f)})
     return original_info_files_list
     
 def store_original_data(original_info_files_list, file="watch"):
@@ -128,7 +129,7 @@ def write_mismatches(path_list, file_to_write):
 
 def check_paths(path_list):
     #Check if every path is valid.
-    #Returns the usable path list. We can
+    #Returns the usable path and unsuable path lists.
     usable_paths = []
     unusable_paths = []
     for path in path_list:
