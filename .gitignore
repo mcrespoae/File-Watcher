@@ -117,3 +117,8 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+logs/old_paths.txt
+logs/new_paths.txt
+data/paths.txt
+data/mismatched.txt
+data/config/workspace_path.txt
