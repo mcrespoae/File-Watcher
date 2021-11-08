@@ -1,3 +1,2 @@
 C:\Anathema\LOTF2\Content\Characters\PlayerMale\LongSword\Animations
 C:\Anathema\LOTF2\Content\Characters\Enemies\CQC\Animations
-C:\Anathema\LOTF2\Content\Characters\Bosses\SwampKnight\Knight\Animations
